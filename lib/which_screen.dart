@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'homepage_trainner.dart'; // Import halaman homepage
+import 'package:health_trecker/homepage_trainner.dart';
 
 void main() => runApp(HealthTracker());
 
@@ -30,7 +30,7 @@ class RoleSelectionScreen extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => homepage_trainer()),
+                MaterialPageRoute(builder: (context) => HomePage()),
               );
             },
           ),
@@ -68,7 +68,7 @@ class RoleSelectionScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => homepage_trainer(),
+                            builder: (context) => HomePage(),
                           ),
                         );
                       },

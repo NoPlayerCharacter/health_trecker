@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'which_screen.dart'; // pastikan file ini ada
-import 'homepage_trainner.dart'; // pastikan penamaan file & kelas sesuai
+// pastikan penamaan file & kelas sesuai
 
 void main() => runApp(HealthTracker());
 

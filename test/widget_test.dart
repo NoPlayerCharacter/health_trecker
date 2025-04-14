@@ -11,13 +11,15 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:health_trecker/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
+  testWidgets('Role selection screen renders correctly',
+      (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(health_tracker());
+    await tester.pumpWidget(HealthTracker());
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
     expect(find.text('1'), findsNothing);
+    expect(find.text('Which One\nAre You?'), findsOneWidget);
 
     // Tap the '+' icon and trigger a frame.
     await tester.tap(find.byIcon(Icons.add));
@@ -26,5 +28,7 @@ void main() {
     // Verify that our counter has incremented.
     expect(find.text('0'), findsNothing);
     expect(find.text('1'), findsOneWidget);
+    expect(find.text('Trainer'), findsOneWidget);
+    expect(find.text('Trainee'), findsOneWidget);
   });
 }
