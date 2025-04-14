@@ -1,7 +1,13 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MaterialApp(
+    title: "Health Trecker",
+    home: Scaffold(
+      appBar: AppBar(title: Text("Health Trecker")),
+      body: Text("Health Trecker"),
+    ),
+  ));
 }
 
 class MyApp extends StatelessWidget {
